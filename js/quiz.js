@@ -64,8 +64,8 @@ function load_quiz(){
       console.log("loading quiz");
       console.log(html);
       console.log($("#quiz-contatiner"));
-      $("#quiz-contatiner").empty();
-      $("#quiz-contatiner").append(html);
+      $("#quiz-container").empty();
+      $("#quiz-container").append(html);
       initialise_quiz();
     },
     failure: function() {
