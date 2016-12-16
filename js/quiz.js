@@ -7,7 +7,8 @@ var quiz = {
   num_options: 2,
 
   //url the guage is fetched from
-  guages_url: "http://clegganator259.github.io/vocal-group-quiz/guages.html"
+  guages_url: "http://clegganator259.github.io/vocal-group-quiz/guages.html",
+  quiz_url: "http://clegganator259.github.io/vocal-group-quiz/quiz.html"
 };
 
 $(document).ready(function(){load_quiz();console.log("dapdapdap")});
@@ -51,7 +52,7 @@ function parse_quiz_data(data){
 
 function display_data(data){
   $.ajax({
-    url: "guages.html",
+    url: quiz.guages_url,
     success: make_guages(data)
   });
 }
