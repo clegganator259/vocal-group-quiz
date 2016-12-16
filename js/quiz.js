@@ -10,11 +10,12 @@ var quiz = {
   guages_url: "http://clegganator259.github.io/vocal-group-quiz/guages.html"
 };
 
+$(document).ready(load_quiz);
 
 /*  
  *  Initialises all components of the quizes 
  */
-$(document).ready(function(){
+function initialise_quiz(){
   var next_slide = function() {$("#quiz-carousel").carousel("next");}; //Moves the quiz on to the next question
   /* Makes sure the contact us button links to the same place */
   $("#contact-us").click(function(){
@@ -36,7 +37,7 @@ $(document).ready(function(){
     var parsed_data = parse_quiz_data(quiz_data);
     display_data(parsed_data); 
   });
-});
+}
 
 function get_quiz_data(){
   return $(".item input:radio:checked");
@@ -54,6 +55,18 @@ function display_data(data){
     success: make_guages(data)
   });
 }
+
+function load_quiz(){
+  $.ajax({
+    url = "quiz.html",
+    success: function(html){
+      $("#quiz-contatiner").empty();
+      $("#quiz-contatiner").append($(html));
+      initialise_quiz();
+    }
+  })
+}
+
 
 function make_guages(data){
   return function(html){
