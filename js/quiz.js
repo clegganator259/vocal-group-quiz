@@ -28,7 +28,7 @@ $(document).ready(function(){
   });
   $("#start-quiz").click(next_slide);
   $("#continue-button").click(next_slide);
-  $("check-my-power-button").click(function(){
+  $("#check-my-power-button").click(function(){
     console.log("Checking power");
     var quiz-data = get_quiz_data();
     var parsed-data = parse_quiz_data(quiz-data);
