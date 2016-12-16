@@ -10,7 +10,7 @@ var quiz = {
   guages_url: "http://clegganator259.github.io/vocal-group-quiz/guages.html"
 };
 
-$(document).ready(load_quiz);
+$(document).ready(function(){load_quiz();console.log("dapdapdap")});
 
 /*  
  *  Initialises all components of the quizes 
