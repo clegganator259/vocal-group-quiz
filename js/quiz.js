@@ -37,7 +37,7 @@ $(document).ready(function(){
 });
 
 function get_quiz_data(){
-  console.log($(".item input:radio:selected"));
+  console.log($(".item input:radio:checked"));
 }
 
 function parse_quiz_data(data){
