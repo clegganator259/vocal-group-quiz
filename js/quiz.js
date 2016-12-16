@@ -13,6 +13,7 @@ var quiz = {
  *  Initialises all components of the quizes 
  */
 $(document).ready(function(){
+  var next_slide = function() {$("#quiz-carousel").carousel("next");} //Moves the quiz on to the next question
   /* Makes sure the contact us button links to the same place */
   $("#contact-us").click(function(){
     window.location.href = quiz.contact_us_url;
@@ -22,10 +23,9 @@ $(document).ready(function(){
   $(".question-wrapper input:radio").click(function(){
     parent_div = $(this).parent().parent(); //Gets the parent of the radio button which has been clicked
     if(parent_div.find("input:radio:checked").length == quiz.num_options){ //checks all items have been selected
-      $("#quiz-carousel").carousel("next"); //Moves the quiz on to the next question
+      next_slide();
     } 
   });
-  $("#start-quiz").click(function(){
-    $("#quiz-carousel").carousel("next");
-  })
+  $("#start-quiz").click(next_slide);
+  $("#continue-button").click(next_slide);
 });
