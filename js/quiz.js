@@ -78,6 +78,8 @@ function load_quiz(){
 function make_guages(data){
   return function(html){
     var new_page = $(html);
+    console.log("Done");
+    console.log($("#quiz-container"));
     $("#quiz-container").empty();
     $("#quiz-container").append(html);
     var values = [67,46,76,34,54,45];
