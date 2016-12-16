@@ -13,7 +13,7 @@ var quiz = {
  *  Initialises all components of the quizes 
  */
 $(document).ready(function(){
-  var next_slide = function() {$("#quiz-carousel").carousel("next");} //Moves the quiz on to the next question
+  var next_slide = function() {$("#quiz-carousel").carousel("next");}; //Moves the quiz on to the next question
   /* Makes sure the contact us button links to the same place */
   $("#contact-us").click(function(){
     window.location.href = quiz.contact_us_url;
@@ -30,9 +30,9 @@ $(document).ready(function(){
   $("#continue-button").click(next_slide);
   $("#check-my-power-button").click(function(){
     console.log("Checking power");
-    var quiz-data = get_quiz_data();
-    var parsed-data = parse_quiz_data(quiz-data);
-    display-data(parsed_data); 
+    var quiz_data = get_quiz_data();
+    var parsed_data = parse_quiz_data(quiz_data);
+    display_data(parsed_data); 
   });
 });
 
