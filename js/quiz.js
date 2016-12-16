@@ -63,8 +63,9 @@ function load_quiz(){
     success: function(html){
       console.log("loading quiz");
       console.log(html);
+      console.log($("#quiz-contatiner"));
       $("#quiz-contatiner").empty();
-      $("#quiz-contatiner").append($(html));
+      $("#quiz-contatiner").append(html);
       initialise_quiz();
     },
     failure: function() {
@@ -78,7 +79,7 @@ function make_guages(data){
   return function(html){
     var new_page = $(html);
     $("#quiz-container").empty();
-    $("#quiz-container").append(new_page);
+    $("#quiz-container").append(html);
     var values = [67,46,76,34,54,45];
     var g1 = new JustGage({
         id: "main_guage",
