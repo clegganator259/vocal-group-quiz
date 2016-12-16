@@ -7,7 +7,7 @@ var quiz = {
   num_options: 2,
 
   //url the guage is fetched from
-  guages_url: "https://guages.html",
+  guages_url: "file://guages.html",
   quiz_url: "file://quiz.html"
 };
 
