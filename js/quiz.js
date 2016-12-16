@@ -39,3 +39,11 @@ $(document).ready(function(){
 function get_quiz_data(){
   console.log($(".item input:radio:selected"));
 }
+
+function parse_quiz_data(data){
+  return [];
+}
+
+function display_data(data){
+  console.log("data");
+}
