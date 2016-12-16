@@ -80,6 +80,7 @@ function make_guages(data){
     var new_page = $(html);
     console.log("Done");
     console.log($("#quiz-container"));
+    console.log($(html));
     $("#quiz-container").empty();
     $("#quiz-container").append(html);
     var values = [67,46,76,34,54,45];
