@@ -63,7 +63,7 @@ function load_quiz(){
     success: function(html){
       console.log("loading quiz");
       console.log(html);
-      console.log($("#quiz-contatiner"));
+      console.log($("#quiz-container"));
       $("#quiz-container").empty();
       $("#quiz-container").append(html);
       initialise_quiz();
