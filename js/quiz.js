@@ -60,6 +60,7 @@ function load_quiz(){
   $.ajax({
     url: "quiz.html",
     success: function(html){
+      console.log("loading quiz");
       $("#quiz-contatiner").empty();
       $("#quiz-contatiner").append($(html));
       initialise_quiz();
