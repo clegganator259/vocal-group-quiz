@@ -1,0 +1,108 @@
+body {
+  background-color: #cccccc;  
+}
+
+#quiz-carousel {
+  min-height: 400px;
+}
+
+#contact-us {
+  background-color: green;
+}
+
+
+.item > .col-md-8 {
+  background-color: white;
+}
+
+.carousel-body {
+  height:100px;
+}
+
+.item > .col-md-8 {
+  min-height:340px;
+}
+
+.button-container.btn  {
+  
+  height : 340px;
+}
+.question {
+
+}
+#start-quiz {
+  background-color:red;
+}
+#guage1 {
+  height:400px;
+  width:100%;
+}
+.question-wrapper {
+  min-height: 340px;
+}
+.row {
+  width:100%;
+}
+
+.big-button-container {
+  display:table;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
+.big-button-container div {
+ display:table-cell;
+ vertical-align: middle;
+}
+
+.big-button-container div span {
+  font-size: 128px;
+}
+.contact-us-header-wrapper {
+  height: 20%;
+  width: 100%;
+}
+
+#small-guage-wrapper div svg{
+  width:auto;
+  height:100%
+}
+#small-guage-wrapper div{
+  height:100%
+}
+#guage-container {
+  height:100%;
+}
+
+#small-guage-wrapper {
+  height:100%;
+}
+#guage-container .row{
+  height:100%;
+}
+#small-guage-wrapper .row {
+  height:50%;
+  max-height:400px;
+}
+#guage1-wrapper {
+  height: 100%;
+}
+
+#main_guage{
+  height:100%;
+}
+
+#guage-container{
+  height:400px;
+}
+.question-wrapper {
+  padding-top: 10px;
+}
+
+.question-wrapper form {
+  padding-left: 10px;
+}
+
+.item form span {
+  display:block;
+}
