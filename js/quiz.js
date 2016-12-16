@@ -61,9 +61,13 @@ function load_quiz(){
     url: "quiz.html",
     success: function(html){
       console.log("loading quiz");
+      console.log(html);
       $("#quiz-contatiner").empty();
       $("#quiz-contatiner").append($(html));
       initialise_quiz();
+    },
+    failure: function() {
+      console.log("FAILURE");
     }
   })
 }
