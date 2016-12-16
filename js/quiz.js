@@ -37,13 +37,80 @@ $(document).ready(function(){
 });
 
 function get_quiz_data(){
-  console.log($(".item input:radio:checked"));
+  return $(".item input:radio:checked");
 }
 
 function parse_quiz_data(data){
-  return [];
+  return data.map(function(element){
+    return element;
+  });
 }
 
 function display_data(data){
-  console.log("data");
+  $.ajax({
+    url: "guages.html",
+    success: make_guages(data)
+  });
+}
+
+function make_guages(data){
+  return function(html){
+    var new_page = $(html);
+    $("body").append(new_page);
+    var values = [67,46,76,34,54,45];
+    var g1 = new JustGage({
+        id: "main_guage",
+        value: values[0],
+        min: 0,
+        max: 100,
+        relativeGaugeSize: true,
+        title: "Visitors"
+
+    });
+    var g2 = new JustGage({
+        id: "p_guage",
+        value: values[1],
+        min: 0,
+        max: 100,
+        relativeGaugeSize: true,
+        title: "Visitors"
+
+    });
+    var g3 = new JustGage({
+        id: "o_guage",
+        value: values[2],
+        min: 0,
+        max: 100,
+        relativeGaugeSize: true,
+        title: "Visitors"
+
+    });
+    var g4 = new JustGage({
+        id: "w_guage",
+        value: values[3],
+        min: 0,
+        max: 100,
+        relativeGaugeSize: true,
+        title: "Visitors"
+
+    });
+    var g5 = new JustGage({
+        id: "e_guage",
+        value: values[4],
+        min: 0,
+        max: 100,
+        relativeGaugeSize: true,
+        title: "Visitors"
+
+    });
+    var g6 = new JustGage({
+        id: "r_guage",
+        value: values[5],
+        min: 0,
+        max: 100,
+        relativeGaugeSize: true,
+        title: "Visitors"
+
+    });
+  }
 }
