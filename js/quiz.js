@@ -6,6 +6,8 @@ var quiz = {
   //Chage this if you want more than 2 options in the quiz
   num_options: 2
 
+  //url the guage is fetched from
+  guages_url: "http://clegganator259.github.io/vocal-group-quiz/guages.html"
 };
 
 
