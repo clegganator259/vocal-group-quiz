@@ -7,8 +7,8 @@ var quiz = {
   num_options: 2,
 
   //url the guage is fetched from
-  guages_url: "http://clegganator259.github.io/vocal-group-quiz/guages.html",
-  quiz_url: "http://clegganator259.github.io/vocal-group-quiz/quiz.html"
+  guages_url: "https://guages.html",
+  quiz_url: "file://quiz.html"
 };
 
 $(document).ready(function(){load_quiz();console.log("dapdapdap")});
