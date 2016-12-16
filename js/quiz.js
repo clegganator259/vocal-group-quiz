@@ -58,7 +58,7 @@ function display_data(data){
 
 function load_quiz(){
   $.ajax({
-    url = "quiz.html",
+    url: "quiz.html",
     success: function(html){
       $("#quiz-contatiner").empty();
       $("#quiz-contatiner").append($(html));
