@@ -71,7 +71,8 @@ function load_quiz(){
 function make_guages(data){
   return function(html){
     var new_page = $(html);
-    $("body").append(new_page);
+    $("#quiz-container").empty();
+    $("#quiz-container").append(new_page);
     var values = [67,46,76,34,54,45];
     var g1 = new JustGage({
         id: "main_guage",
