@@ -33,7 +33,7 @@ $(document).ready(function(){
     var quiz-data = get_quiz_data();
     var parsed-data = parse_quiz_data(quiz-data);
     display-data(parsed_data); 
-  }) 
+  });
 });
 
 function get_quiz_data(){
