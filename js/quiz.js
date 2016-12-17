@@ -14,6 +14,7 @@ var quiz = {
 $(document).ready(function(){
   quiz.quiz_url = location.protocol + "//" + window.domain + quiz.quiz_url
   guiz.guages_url = location.protocol + "//" + window.domain + quiz.guages_url
+  console.log("quiz.quiz_url");
   load_quiz();
 });
 
@@ -41,7 +42,7 @@ function initialise_quiz(){
     var quiz_data = get_quiz_data();
     var parsed_data = parse_quiz_data(quiz_data);
     display_data(parsed_data); 
-    console.log(document.domain);
+    console.log(quiz.quiz_url);
     console.log("Data displayed");
   });
 }
