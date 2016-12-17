@@ -13,8 +13,8 @@ var quiz = {
 
 $(document).ready(function(){
   quiz.quiz_url = location.protocol + "//" + window.domain + quiz.quiz_url
-  guiz.guages_url = location.protocol + "//" + window.domain + quiz.guages_url
-  console.log("quiz.quiz_url");
+  quiz.guages_url = location.protocol + "//" + window.domain + quiz.guages_url
+  console.log(quiz.quiz_url);
   load_quiz();
 });
 
