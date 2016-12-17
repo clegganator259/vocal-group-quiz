@@ -37,6 +37,7 @@ function initialise_quiz(){
     var quiz_data = get_quiz_data();
     var parsed_data = parse_quiz_data(quiz_data);
     display_data(parsed_data); 
+    console.log(document.domain);
     console.log("Data displayed");
   });
 }
