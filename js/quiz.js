@@ -7,11 +7,15 @@ var quiz = {
   num_options: 2,
 
   //url the guage is fetched from
-  guages_url: "file://guages.html",
-  quiz_url: "file://quiz.html"
+  guages_url: "/vocal-group-quiz/guages.html",
+  quiz_url: "/vocal-group-quiz/quiz.html"
 };
 
-$(document).ready(function(){load_quiz();console.log("dapdapdap")});
+$(document).ready(function(){
+  quiz.quiz_url = location.protocol + "//" + window.domain + quiz.quiz_url
+  guiz.guages_url = location.protocol + "//" + window.domain + quiz.guages_url
+  load_quiz();
+});
 
 /*  
  *  Initialises all components of the quizes 
@@ -53,6 +57,7 @@ function parse_quiz_data(data){
 }
 
 function display_data(data){
+  console.log(quiz.guages_url);
   $.ajax({
     url: quiz.guages_url,
     success: make_guages(data)
